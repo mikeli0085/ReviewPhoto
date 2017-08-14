@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Review Photos for Magento 1.6
+ * Designed by Fast Division (http://fastdivision.com)
+ *
+ * @author     Fast Division
+ * @version    1.0.0
+ * @copyright  Copyright 2011 Fast Division
+ * @license    All rights reserved.
+ */
+-->
+<config>
+    <tabs>
+        <fastdivision_tab translate="label">
+            <label>Fast Division</label>
+            <sort_order>100</sort_order>
+        </fastdivision_tab>       
+    </tabs>
+    <sections>
+        <reviewphotos_config translate="label">
+			<label><![CDATA[<span class="reviewphotos-admin-link">Review Photos</span>]]></label>
+    	    <tab>fastdivision_tab</tab>
+    	    <frontend_type>text</frontend_type>
+    	    <sort_order>40</sort_order>
+    	    <show_in_default>1</show_in_default>
+    	    <show_in_website>1</show_in_website>
+    	    <show_in_store>1</show_in_store>
+            <groups>
+                <reviewphotos_general translate="label">
+					<label>General Settings</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>					
+					<fields>
+						<reviewphotos_enabled translate="label">
+							<label>Photos Enabled</label>
+							<frontend_type>select</frontend_type>
+							<sort_order>0</sort_order>
+						    <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</reviewphotos_enabled>
+						<reviewphotos_show_title translate="label">
+							<label>Show Photo Title</label>
+							<frontend_type>select</frontend_type>
+							<sort_order>1</sort_order>
+						    <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>						    
+						</reviewphotos_show_title>
+						<reviewphotos_show_description translate="label">
+							<label>Show Photo Description</label>
+							<frontend_type>select</frontend_type>
+							<sort_order>2</sort_order>
+						    <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>						    
+						</reviewphotos_show_description>
+						<reviewphotos_thumbnail_x translate="label comment">
+							<label>Thumbnail Width</label>
+							<comment><![CDATA[Width of your photo thumbnails (in px).]]></comment>
+						    <frontend_type>text</frontend_type>                         
+						    <sort_order>4</sort_order>
+						    <show_in_default>1</show_in_default>
+						    <show_in_website>1</show_in_website>
+						    <show_in_store>1</show_in_store>
+						</reviewphotos_thumbnail_x>
+						<reviewphotos_thumbnail_y translate="label comment">
+							<label>Thumbnail Height</label>
+							<comment><![CDATA[Height of your photo thumbnails (in px).]]></comment>
+						    <frontend_type>text</frontend_type>                         
+						    <sort_order>5</sort_order>
+						    <show_in_default>1</show_in_default>
+						    <show_in_website>1</show_in_website>
+						    <show_in_store>1</show_in_store>
+						</reviewphotos_thumbnail_y>
+						<reviewphotos_terms translate="label comment">
+						    <label>Terms &amp; Conditions</label>
+							<comment><![CDATA[This paragraph is shown before the photo submission form. You can leave this blank if you'd like.]]></comment>
+						    <frontend_type>textarea</frontend_type>                         
+						    <sort_order>6</sort_order>
+						    <show_in_default>1</show_in_default>
+						    <show_in_website>1</show_in_website>
+						    <show_in_store>1</show_in_store>
+						</reviewphotos_terms>
+						<reviewphotos_default_style translate="label comment">
+							<label>Use Default Style</label>
+							<comment><![CDATA[Includes our default stylesheet code. If you're going to customize the look of this extension for your theme, you can turn this off.]]></comment>
+							<frontend_type>select</frontend_type>
+							<sort_order>7</sort_order>
+						    <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>						    
+						</reviewphotos_default_style>
+					</fields>
+				</reviewphotos_general>
+            </groups>
+		</reviewphotos_config>
+    </sections>
+</config>

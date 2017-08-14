@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Review Photos for Magento 1.6
+ * Designed by Fast Division (http://fastdivision.com)
+ *
+ * @author     Fast Division
+ * @version    1.0.0
+ * @copyright  Copyright 2011 Fast Division
+ * @license    All rights reserved.
+ */
+-->
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <reviewphotos_config>
+                                        <title>Review Photos</title>
+                                    </reviewphotos_config>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
